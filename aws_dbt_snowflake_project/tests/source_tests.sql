@@ -1,11 +1,9 @@
 {{ config(
-    severity='warn',
+    severity='error',
     tags=['source_test']
 ) }}
 
-SELECT
-    1
-FROM
-    {{ source('staging', 'bookings')}}
-WHERE
-    booking_amount < 100
+SELECT booking_id, booking_amount
+FROM {{ source('staging', 'bookings') }}
+WHERE booking_amount <= 0
+   OR booking_amount IS NULL
