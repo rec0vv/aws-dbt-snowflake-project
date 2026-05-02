@@ -8,6 +8,17 @@ The pipeline is designed with scalability and modularity in mind, leveraging **d
 
 ---
 
+## Tech Stack
+
+- SQL (dbt models)
+- Snowflake
+- dbt (Jinja templating)
+- AWS S3
+- Python
+- YAML (dbt configuration)
+
+---
+
 ## Architecture Overview
 
 The pipeline follows a **medallion architecture**:
