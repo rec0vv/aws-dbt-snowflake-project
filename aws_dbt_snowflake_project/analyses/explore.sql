@@ -1,1 +1,1 @@
-SELECT * FROM {{ ref('silver_hosts') }}
+SELECT * FROM {{ ref('obt') }}
